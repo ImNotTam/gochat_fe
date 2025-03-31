@@ -27,7 +27,7 @@ instance.interceptors.response.use(
       try {
         console.log('Token expired, attempting refresh...');
         // Try to refresh token using the refresh_token cookie
-        await axios.post(`${API_URL}/refresh`, {}, {
+        await axios.post(`/refresh`, {}, {
           withCredentials: true
         });
         
