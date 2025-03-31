@@ -19,7 +19,7 @@ const useWebSocket = () => {
       return;
     }
 
-    const wsUrl = `${WEBSOCKET_URL}/ws/joinRoom/${roomId}?userId=${userId}&username=${username}`;
+    const wsUrl = `${WEBSOCKET_URL}/joinRoom/${roomId}?userId=${userId}&username=${username}`;
     console.log('Connecting to WebSocket:', wsUrl);
 
     try {
